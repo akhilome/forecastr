@@ -1,10 +1,58 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px 30px;
+
+  input {
+    margin: 20px 10px;
+    height: 40px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+
+    &::placeholder {
+      text-align: center;
+    }
+  }
+
+  input[type='submit'] {
+    border-color: #333;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
+
 main {
   flex-grow: 5;
   display: flex;
   justify-content: center;
   margin-top: 25px;
+  flex-wrap: wrap;
+  width: 100vw;
 
   h2 {
     letter-spacing: -1px;
+  }
+}
+
+.search-container {
+  width: 30%;
+}
+
+.locations {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  section {
+    margin: 30px;
   }
 }
