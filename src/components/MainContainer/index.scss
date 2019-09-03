@@ -39,10 +39,18 @@ main {
   h2 {
     letter-spacing: -1px;
   }
+
+  @media only screen and (max-width: 620px) {
+    flex-direction: column;
+  }
 }
 
 .search-container {
   width: 30%;
+
+  @media only screen and (max-width: 620px) {
+    width: 100%;
+  }
 }
 
 .locations {
@@ -54,5 +62,9 @@ main {
 
   section {
     margin: 30px;
+  }
+
+  @media only screen and (max-width: 620px) {
+    width: 100%;
   }
 }
